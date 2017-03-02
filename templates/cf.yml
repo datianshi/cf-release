@@ -1369,7 +1369,7 @@ meta:
     consumes: {nats: nil}
   - name: metron_agent
     release: (( meta.loggregator_release_name ))
-  - name: statsd_injector
+  - name: statsd-injector
     release: (( meta.statsd_injector_release_name ))
   - name: route_registrar
     release: (( meta.routing_release_name ))
@@ -1585,7 +1585,7 @@ meta:
   - name: route_registrar
     release: (( meta.routing_release_name ))
     consumes: {nats: nil}
-  - name: statsd_injector
+  - name: statsd-injector
     release: (( meta.statsd_injector_release_name ))
 
   default_quota_definitions:
